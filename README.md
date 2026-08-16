@@ -2,7 +2,7 @@
 
 Clip the page you are reading plus a note of your own into a private notebook that lives only in your Chrome: search across clips and notes, and JSON or Markdown export you own. Page text is captured only when you press the button — no host permissions, no background tracking.
 
-Landing page: `https://clipnotes-xxx.vercel.app` (final alias after deploy)
+Landing page: `https://clipnotes-jade.vercel.app`
 
 ## What it does
 
@@ -36,7 +36,7 @@ No `host_permissions`: no site ever gets persistent access.
 
 Sujeta la página que estás leyendo más una nota tuya en un cuaderno privado que vive solo en tu Chrome: búsqueda entre clips y notas, y exportación en JSON o Markdown que te pertenece. El texto de la página solo se captura cuando pulsas el botón — sin permisos de host, sin seguimiento en segundo plano.
 
-Página de aterrizaje: `https://clipnotes-xxx.vercel.app` (alias final tras el deploy)
+Página de aterrizaje: `https://clipnotes-jade.vercel.app`
 
 ## Qué hace
 
