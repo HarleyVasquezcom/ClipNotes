@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ClipNotes</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <span class="cliplogo" aria-hidden="true"></span>
+      <div class="brandtxt">
+        <span class="name" data-i18n="name">ClipNotes</span>
+        <span class="tagline" data-i18n="tagline">clip a note to anything</span>
+        <span id="noteCount" class="notecount"></span>
+      </div>
+    </div>
+    <select id="langSel" data-i18n-lang aria-label="Language">
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+      <option value="fr">FR</option>
+      <option value="pt">PT</option>
+      <option value="it">IT</option>
+      <option value="de">DE</option>
+    </select>
+  </header>
+
+  <div class="actions">
+    <button id="addBtn" class="add" data-i18n="addNow">Clip this page</button>
+    <button id="newBtn" class="add ghost" data-i18n="newNote">Blank note</button>
+  </div>
+
+  <div class="filters">
+    <input id="searchInput" type="search" data-i18n="searchPh" placeholder="Search…">
+  </div>
+
+  <div id="list" class="list"></div>
+
+  <div id="status" class="status"></div>
+
+  <footer>
+    <span id="capNote" class="capnote"></span>
+    <div class="row">
+      <button id="exportMdBtn" class="ghost" data-i18n="exportMd">Export Markdown</button>
+      <button id="exportJsonBtn" class="ghost" data-i18n="exportJson">Export JSON</button>
+    </div>
+    <a class="credit" data-i18n="credit" href="https://www.linkedin.com/in/harleyvasquez/" target="_blank" rel="noreferrer">Built by Harley Vásquez</a>
+  </footer>
+</div>
+
+<script src="i18n.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

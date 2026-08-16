@@ -1,0 +1,106 @@
+:root {
+  --rust: #9a3412;
+  --rust2: #c2571f;
+  --cream: #fef3c7;
+  --bg: #fbf4e8;
+  --card: #ffffff;
+  --text: #2b211a;
+  --muted: #7c6f63;
+  --line: #eee3d3;
+  --amber: #f59e0b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 420px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 13px;
+}
+.app { display: flex; flex-direction: column; max-height: 560px; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; background: #fff; border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.cliplogo {
+  width: 30px; height: 30px; flex: none; position: relative;
+  background: var(--rust); border-radius: 8px;
+}
+.cliplogo::before {
+  content: ''; position: absolute; left: 8px; right: 8px; top: 10px; bottom: 6px;
+  background: var(--cream); border-radius: 2px;
+}
+.cliplogo::after {
+  content: ''; position: absolute; left: 12px; top: 4px; width: 8px; height: 22px;
+  border: 2px solid var(--cream); border-radius: 0 0 8px 8px; border-top: 0;
+}
+.brandtxt { display: flex; flex-direction: column; }
+.name { font-weight: 700; color: var(--rust); font-size: 14px; }
+.tagline { color: var(--muted); font-size: 10.5px; line-height: 1.1; }
+.notecount { color: var(--muted); font-size: 11px; }
+select {
+  background: var(--cream); color: var(--rust); border: 1px solid var(--rust2);
+  border-radius: 8px; padding: 3px 6px; font-size: 12px;
+}
+.actions { display: flex; gap: 8px; padding: 12px 14px 4px; }
+.add {
+  flex: 1; padding: 9px; border: 0; border-radius: 10px;
+  background: linear-gradient(135deg, var(--rust), var(--rust2));
+  color: #fff; font-weight: 700; font-size: 14px; cursor: pointer;
+}
+.add:hover { filter: brightness(1.08); }
+.add.ghost {
+  flex: 0 0 auto; background: #fff; color: var(--rust);
+  border: 1px solid var(--line); font-size: 12.5px; font-weight: 600;
+}
+.add.ghost:hover { background: var(--cream); }
+.filters { display: flex; align-items: center; gap: 6px; padding: 8px 14px; }
+#searchInput {
+  flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 999px;
+  padding: 5px 11px; font-size: 12px; background: #fff;
+}
+.list { overflow-y: auto; padding: 0 14px 6px; }
+.item {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px 10px 8px; margin-bottom: 8px;
+}
+.item .ititle { font-weight: 600; font-size: 12.5px; word-break: break-word; }
+.item .isub { color: var(--muted); font-size: 11px; display: flex; gap: 6px; align-items: center; margin-top: 2px; flex-wrap: wrap; }
+.chip {
+  background: var(--cream); color: var(--rust); border-radius: 6px;
+  padding: 1px 6px; font-size: 10px; font-weight: 600;
+}
+.item .isnip { color: var(--muted); font-size: 11px; margin-top: 5px; max-height: 34px; overflow: hidden; }
+.nedit { margin-top: 8px; }
+.nedit textarea {
+  width: 100%; min-height: 52px; resize: vertical; border: 1px solid var(--line);
+  border-radius: 8px; padding: 6px 8px; font: inherit; font-size: 11.5px; color: var(--text);
+  background: #fdfaf4;
+}
+.nedit .nrow { display: flex; justify-content: flex-end; margin-top: 4px; }
+.item .iacts { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+.mini {
+  border: 1px solid var(--line); background: #fff; color: var(--rust);
+  border-radius: 7px; padding: 3px 9px; font-size: 11px; cursor: pointer;
+}
+.mini:hover { background: var(--cream); }
+.mini.del { color: #a83232; }
+.mini.del:hover { background: #fbe3dc; }
+.empty { color: var(--muted); text-align: center; padding: 22px 10px; font-size: 12px; }
+.status {
+  min-height: 16px; padding: 4px 20px 2px; color: var(--rust); font-size: 11.5px; text-align: center;
+}
+footer {
+  border-top: 1px solid var(--line); background: #fff;
+  padding: 8px 14px 10px; display: flex; flex-direction: column; gap: 6px;
+}
+.row { display: flex; gap: 8px; }
+.ghost {
+  flex: 1; border: 1px solid var(--line); background: #fff; color: var(--rust);
+  border-radius: 9px; padding: 6px; font-size: 12px; cursor: pointer;
+}
+.ghost:hover { background: var(--cream); }
+.capnote { color: var(--muted); font-size: 11px; text-align: center; }
+.credit { color: var(--rust2); text-align: center; text-decoration: none; font-size: 11px; }
+.credit:hover { text-decoration: underline; }

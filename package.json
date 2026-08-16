@@ -1,0 +1,16 @@
+{
+  "name": "clipnotes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ClipNotes — clip a note to anything (MV3): save the current page (title, URL, readable text) plus your own note into a private notebook in chrome.storage, with search and JSON/Markdown export. Page text is read only on popup click; no host permissions.",
+  "type": "module",
+  "scripts": {
+    "probe": "node tests/probe.mjs",
+    "zip": "node tools/zip.mjs",
+    "gen-icons": "node tools/gen-icons.mjs"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "puppeteer": "^25.7.0"
+  }
+}
